@@ -95,17 +95,19 @@ export default {
         if (f1.defense < f2.defense && f1.defense > 0 && f2.defense > 0){
           f2.defense -= f1.attack;
           f1.defense -= f2.attack;
-
+              console.log(f2)
               this.battleFighters(f1, f2);
         
       } else if (f2.defense < f1.defense && f2.defense > 0 && f1.defense > 0){
           f1.defense -= f2.attack;
           f2.defense -= f1.attack;
+          console.log(f2)
               this.battleFighters(f1, f2);
         
       } else if (f2.defense === f1.defense && f2.defense > 0 && f1.defense > 0){
           f2.defense -= f1.attack;
           f1.defense -= f2.attack;
+          console.log(f2)
               this.battleFighters(f1, f2);
         
       } else if (f2.defense <= 0){
